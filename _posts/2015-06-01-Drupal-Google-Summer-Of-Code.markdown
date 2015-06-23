@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "And It Begins!"
-date:   2015-06-29 22:40:00
+date:   2015-06-01 22:40:00
 categories: Gsoc'15 updates
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
@@ -21,18 +21,6 @@ The idea is very simple, if i want to share a video on facebook all i need to do
 Well, that is what this blog is for, for the starters we'll let the heavy work be done by OscarOtereo's Embed library. and that is what i explored this week. you can also look into it and read more about it by clicking here...
 
 In the nextt week I will work on something very obvious.. in order to embed a url's content we need to identify a url and replace it, with its content that is what *Text Filters* do,and that is what I am gonna write this week...
-
-{% highlight js %}
-
-<footer class="site-footer">
- <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
-  <div class="inner">a
-   <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
-   <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
-  </div>
-</footer>
-{% endhighlight %}
-
 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
