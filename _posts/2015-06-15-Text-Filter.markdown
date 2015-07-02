@@ -21,6 +21,9 @@ Though i have written the filter, i am still getting a rendering array, which is
 
 plus you can now follow the code at my github account too.
 
+[url-embed-issues]: https://www.drupal.org/project/issues/url_embed
+[url-embed-gh]: https://github.com/prateekmehta/url_embed
+
 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
