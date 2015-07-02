@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Url Embed Text Filter Plugin"
-date:   2015-06-01 22:40:00
+date:   2015-06-15 22:40:00
 categories: Gsoc'15 updates
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
@@ -17,12 +17,11 @@ So a person should be able to tell what provider to use if he has multiple optio
 , so by using a method called process_text we filter out that tag, and pass the url and optionally the configuration options to the embed library.
 replace the **drupal-url**  by a div tag and put in the data in it.
 
-Though i have written the filter, i am still getting a rendering array, which is a bug i need to resolve, the issue has now been raised, in drupalissue queue, I will update the blog as and when that gets resolved.
+Though i have written the filter, i am still getting a stray drupal render_array bug, which is a bug i need to resolve, the issue has now been raised, in [drupal issue queue](https://www.drupal.org/project/issues/url_embed "issue-queue"), I will update the blog as and when that gets resolved.
 
-plus you can now follow the code at my github account too.
+plus you can now follow the code at my [github](https://github.com/prateekmehta/url_embed) account too.
 
-[url-embed-issues]: https://www.drupal.org/project/issues/url_embed
-[url-embed-gh]: https://github.com/prateekmehta/url_embed
+[url-embed-issues]: [url-embed-gh]:
 
 
 [jekyll]:      http://jekyllrb.com
