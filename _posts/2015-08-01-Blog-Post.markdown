@@ -20,7 +20,7 @@ So the new schema looks like this.
 
 {% highlight php %}
 
-url_embed.url_button.\*:
+url_embed.url_button.:
   type: config_entity
   label: 'Url button config'
   mapping:
@@ -67,10 +67,6 @@ class OembedProvider extends ControllerBase{
 
 
  
-    /**
-     * Returns a json response whenever called.
-     *
-     */
     public function content($url=False, $Format = 'json'){
         
         //Start by checking format
