@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Text Filter & Url Buttons : Merged"
-date:   2015-07-1 22:40:00
+date:   2015-08-1 22:40:00
 categories: Gsoc'15 updates
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
