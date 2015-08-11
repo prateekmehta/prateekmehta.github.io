@@ -6,17 +6,19 @@ categories: Gsoc'15 updates
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
 ---
+
 So After 15 days of bed rest, due to dengue. i am came back to work, and had lots to cover, Starting from getting the the pending Pull Requests on Text Filters and URL Buttons Merged.
 
 Since we have a lots to cover i will start by telling you the progress done so far. by far we have succesfully merged Text Filters and URL Buttons.
 
 A. URL Buttons 
    
-        Since last time, we were stuck with some fundamental confusion about providers, and sources in the library we chose Embed.  We needed to figure out how to handle limiting embedding by provider and/or sources. For example. I should be able to create two different buttons, one to embed Youtube videos, and one to embed Vimeo videos. By default we should have one button that makes it possible to embed all things though. we needed to evaluate if this is possible from the Embed library itself, if we should provide this functionality ourselves, or if we need to switch to a library that can support this.
+ Since last time, we were stuck with some fundamental confusion about providers, and sources in the library we chose Embed.  We needed to figure out how to handle limiting embedding by provider and/or sources. For example. I should be able to create two different buttons, one to embed Youtube videos, and one to embed Vimeo videos. By default we should have one button that makes it possible to embed all things though. we needed to evaluate if this is possible from the Embed library itself, if we should provide this functionality ourselves, or if we need to switch to a library that can support this.
 
-        On observation we concluded that there's isn't any way to limit the providers in a button. What we can do is look upon $info->providerUrl after Embed library has returned its results and then try to limit the providers ourselves (which might be tricky in some cases), but that is what we decide to leave for the furture since we didn't want to get blocked by it. Henceforth we removed providers and sources from the schema for the time being. for more information or if you could provide any help please comment [here](https://www.drupal.org/node/2529318)
+On observation we concluded that there's isn't any way to limit the providers in a button. What we can do is look upon providerUrl after Embed library has returned its results and then try to limit the providers ourselves (which might be tricky in some cases), but that is what we decide to leave for the furture since we didn't want to get blocked by it. Henceforth we removed providers and sources from the schema for the time being. for more information or if you could provide any help please comment [here](https://www.drupal.org/node/2529318)
         
-        So the new schema looks like this.
+So the new schema looks like this.
+
 
 {% highlight php %}
 
