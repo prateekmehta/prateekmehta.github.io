@@ -11,7 +11,8 @@ So After 15 days of bed rest, due to dengue. i am came back to work, and had lot
 
 Since we have a lots to cover i will start by telling you the progress done so far. by far we have succesfully merged Text Filters and URL Buttons.
 
-A. URL Buttons : Since last time, we were stuck with some fundamental confusion about providers, and sources in the library we chose Embed.  We needed to figure out how to handle limiting embedding by provider and/or sources. For example. I should be able to create two different buttons, one to embed Youtube videos, and one to embed Vimeo videos. By default we should have one button that makes it possible to embed all things though. we needed to evaluate if this is possible from the Embed library itself, if we should provide this functionality ourselves, or if we need to switch to a library that can support this.
+A. URL Buttons : 
+Since last time, we were stuck with some fundamental confusion about providers, and sources in the library we chose Embed.  We needed to figure out how to handle limiting embedding by provider and/or sources. For example. I should be able to create two different buttons, one to embed Youtube videos, and one to embed Vimeo videos. By default we should have one button that makes it possible to embed all things though. we needed to evaluate if this is possible from the Embed library itself, if we should provide this functionality ourselves, or if we need to switch to a library that can support this.
 
 On observation we concluded that there's isn't any way to limit the providers in a button. What we can do is look upon providerUrl after Embed library has returned its results and then try to limit the providers ourselves (which might be tricky in some cases), but that is what we decide to leave for the furture since we didn't want to get blocked by it. Henceforth we removed providers and sources from the schema for the time being. for more information or if you could provide any help please comment [here](https://www.drupal.org/node/2529318)
         
@@ -46,11 +47,12 @@ A part from that we also decided to add default URL button which will be install
 Oh yes, we have this one issue still open, about the button icon, for the time being we are still using the icon used by entity embed with an 'E' as the image, so if you could suggest some other icon, such as the one with a 'U' or 'Url' on it, please do that [here](https://www.drupal.org/node/2546344i).
 
 B. Text Filters : 
-       So finally we also got the process_text branch also merged. The thing which was blocking us was that the tests were failing on travis, i essentially do not have much clue how that works, but basically it is a tool which keeps check on github , that whatever branch is pushed passes all the tests. Initially we had some problem with the composer, and then our tests were failing because the sample_url we used in our tests was that of youtube, which didn't allow travis to access it. Hence we thought of creating routes for testing embedding, Rather than rely on external URLs.
 
-       So as discussed Embed expects a service api to which it can post a "GET" request and the api should return it a JSON object with right information as mentioned [here](http://oembed.com/).
+So finally we also got the process_text branch also merged. The thing which was blocking us was that the tests were failing on travis, i essentially do not have much clue how that works, but basically it is a tool which keeps check on github , that whatever branch is pushed passes all the tests. Initially we had some problem with the composer, and then our tests were failing because the sample_url we used in our tests was that of youtube, which didn't allow travis to access it. Hence we thought of creating routes for testing embedding, Rather than rely on external URLs.
 
-       So i defined a route and wrote a controller for it, which was pretty much straight forward. Have a look :
+So as discussed Embed expects a service api to which it can post a "GET" request and the api should return it a JSON object with right information as mentioned [here](http://oembed.com/).
+
+So i defined a route and wrote a controller for it, which was pretty much straight forward. Have a look :
 
 {% highlight php %}
 
