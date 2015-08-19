@@ -19,6 +19,15 @@ A. Ckeditor Integration
    
    Given below are some snapshots of the dialog form and some other snapshots from our module.
 
+   ![1](/assets/images/URL-Buttons.png)
+   ![2](/assets/images/Default-Button.png)
+   ![Insert-URL](/assets/images/Insert-URL.png)
+   ![Edit-URL](/assets/images/Edit-URL.png)
+   ![URL-Button-Form](/assets/images/URL-Button-Form.png)
+
+
+        
+
 B. Field Formatter.
       
    Another thing i have been working on is a field formatter, field formatter tell us how a field type will be displayed, since we are working on embeding URLs so obviously we added a formatter for a "Link" type of field which is nothing but a way to add URLs . Since we were working on Embedding a URL, we made a formatter which takes input from that field ie a URL passes that URL to the Embed Library and gets the embed code, and renders the URL as that Embeded media instead of showing Title or using that URL as a tittle,(such formatters were already availaible in drupal). As usual field formatters are also implemented as plugins in drupal 8, you can have a look at how we implemented a formatter for link type field called LinkEmbedFormatter [here](https://github.com/prateekmehta/url_embed/blob/6fd0684d8a15643cff4d22dd98fb30ba60d507bf/src/Plugin/Field/FieldFormatter/LinkEmbedFormatter.php) it is still in a PR, a test is still pending for this which i will complete, very soon. This tutoriol here was very helpful, so if you want implement a formatter yourself, [this](http://enzolutions.com/articles/2014/12/09/how-to-create-a-field-formatter-in-drupal-8/) should be good start.
