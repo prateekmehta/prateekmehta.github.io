@@ -25,8 +25,8 @@ Hi all,
   Next up we had was [Formatter](http://prateekmehta.github.io/gsoc'15/updates/2015/08/07/Ckeditor-Integration.html), so Embeding a URL is not the only way to render a URL, other ways such as using Title of of the URL's content etc already exist for "link" type of field our task was to add another field Formatter which would embed that url, as usual this task was also done by making a seprate plugin for this task, in my prevous [blog](http://prateekmehta.github.io/gsoc'15/updates/2015/08/07/Ckeditor-Integration.html) I have already mentioned useful tutoriols and link to the github code.
 
   Finally I would like to direct you guys to url embed issue queue, link given below, to have a look at it and contribute, test and report bugs.In future we have two major tasks still pending, 
-  1) we are still relying on  flickr for our testing, we need to create our own testing module, problems related to that are there in my previous blogs as well as the issue queue.
-  2) restrain on source providers and sources.
+  1) we are still relying on  flickr for our testing, we need to create our own testing module, problems related to that are there in my [previous blogs](http://prateekmehta.github.io/gsoc'15/updates/2015/08/01/Blog-Post.html) as well as the issue queue in issue number [2534170](https://www.drupal.org/node/2534170).
+  2) restrain on source providers and sources, issue number [2529318](https://www.drupal.org/node/2529318)
 
   I will keep on maintianing the code for atleast another year, so kindly feel free to contact me as and when requred, also any major/minor annoucements shall also take place through this blog only so if you are keen on followign up, please subsribe to this blog, till then ADIOS!
 
@@ -34,9 +34,10 @@ Hi all,
 
 [drupal issue queue](https://www.drupal.org/project/issues/url_embed "issue-queue").
 
-plus you can now follow the code at my [github](https://github.com/prateekmehta/url_embed) account.
+plus you can now follow the code at drupal media's  [github](https://github.com/drupal-media/url_embed) account.
 
-[url-embed-issues]: [url-embed-gh]:
+[url-embed-issues]: https://github.com/drupal-media/url_embed 
+[url-embed-gh]: https://github.com/drupal-media/url_embed
 
 
 [jekyll]:      http://jekyllrb.com
