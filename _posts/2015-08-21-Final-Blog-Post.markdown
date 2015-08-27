@@ -30,6 +30,10 @@ Hi all,
 
   I will keep on maintianing the code for atleast another year, so kindly feel free to contact me as and when requred, also any major/minor annoucements shall also take place through this blog only so if you are keen on followign up, please subsribe to this blog, till then ADIOS!
 
+  And yeah, one more thing, Following are the links to the PRs merged during this GSoC and the recent one which is still open, will work on it very shortly.
+ 
+  [Closed](https://github.com/drupal-media/url_embed/pulls?q=is%3Apr+is%3Aclosed+author%3Aprateekmehta)
+  [Open](https://github.com/drupal-media/url_embed/pulls/prateekmehta)
 
 
 [drupal issue queue](https://www.drupal.org/project/issues/url_embed "issue-queue").
