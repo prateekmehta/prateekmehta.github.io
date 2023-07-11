@@ -2,7 +2,7 @@
 layout: post
 title:  "Some Random Thoughts"
 date:   2023-07-11 22:07:00
-categories: Journaling
+categories: journal updates
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
 ---
